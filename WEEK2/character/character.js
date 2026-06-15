@@ -4,8 +4,8 @@ alert('Hello I am Tharrin Cooper and welcome to my fantasy character webpage');
 
 //Gathering Charcter Information From User
 const charName = prompt(`What is your character's name?`, `temp`);
-const charPet = prompt(`What kind of pet does ${charName} have?`);
-const charPower = prompt(`What kind of superpower does ${charName} have?`);
+const charPet = prompt(`What kind of pet does ${charName} have?`, `temp`);
+const charPower = prompt(`What kind of superpower does ${charName} have?`, `temp`);
 const charFighter = confirm(`Does ${charName} like fighting? (Ok for Yes Cancel for No)`);
 
 //Displaying Character Information
