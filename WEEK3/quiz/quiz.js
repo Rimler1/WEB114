@@ -32,7 +32,8 @@ Math: How will I calculate the percentage?
 if score >= 3 then say you did good else if score >= 1 then say you did okay else if score <= 0 say you did terrible
 
 Logical operators I will use:
-    - || for my hobbies allowing for multiple valid answers and for the final feedback
+    - || for my hobbies allowing for multiple valid answers
+    - && to check for blanks 
 */
 
 // Creating Variables
@@ -46,16 +47,20 @@ let favColor;
 myName = prompt(`What is my name?`, `enter name`)
 if(myName.toLowerCase() === `tharrin`) {
 alert(`Correct`);
-totalScore += 1;
+totalScore += 1;    
+} else if(myName && myName.trim() === ``){
+alert(`Answer Blank`)
 } else {
 alert(`Wrong`);
 }
 
 // Question 2
-myHobby = prompt(`What is one of the hobbies I enjoy out of the following video games, jogging, or reading)`, `enter hobby`)
+myHobby = prompt(`What is one of the hobbies I enjoy out of the following video games, jogging, or reading`, `enter hobby`)
 if(myHobby.toLowerCase() === `reading` || myName.toLowerCase() === `video games`) {
 alert(`Correct`);
 totalScore += 1;
+} else if(myHobby && myHobby.trim() === ``){
+alert(`Answer Blank`)
 } else {
 alert(`Wrong`);
 }
@@ -64,6 +69,8 @@ favFood = prompt(`What is my favorite food?`, `enter food`)
 if(favFood.toLowerCase() === `pizza`) {
 alert(`Correct`);
 totalScore += 1;
+} else if(favFood && favFood.trim() === ``){
+alert(`Answer Blank`)
 } else {
 alert(`Wrong`);
 }
@@ -73,12 +80,14 @@ favColor = prompt(`What is my favorite color?`, `enter color`)
 if(favColor.toLowerCase() === `purple`) {
 alert(`Correct`);
 totalScore += 1;
+} else if(favColor && favColor.trim() === ``){
+alert(`Answer Blank`)
 } else {
 alert(`Wrong`);
 }
 
 // Calculate percentage using math
-alert(`You got %${(totalScore/4)*100} of the questions correct`);
+alert(`You got ${(totalScore/4)*100}% of the questions correct`);
 
 // Final feedback using if / else if / else
 if(totalScore >= 3){
@@ -93,4 +102,4 @@ alert(`you got ${totalScore}/4 of the questions correct`);
 alert(`====================================\nFINAL SUMMARY\n====================================\n
 your answer to the first question was: ${myName}\nyour answer to the second question was: ${myHobby}\n
 your answer to the third question was: ${favFood}\nyour answer to the final question was: ${favColor}\n
-you got ${(totalScore/4)*100} of the questions correct`)
+you got ${(totalScore/4)*100}% of the questions correct`);
