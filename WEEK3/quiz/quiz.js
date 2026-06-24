@@ -49,7 +49,7 @@ if(myName.toLowerCase() === `tharrin`) {
 alert(`Correct`);
 totalScore += 1;    
 } else if(myName && myName.trim() === ``){
-alert(`Answer Blank`)
+alert(`Answer Blank`);
 } else {
 alert(`Wrong`);
 }
@@ -60,7 +60,7 @@ if(myHobby.toLowerCase() === `reading` || myName.toLowerCase() === `video games`
 alert(`Correct`);
 totalScore += 1;
 } else if(myHobby && myHobby.trim() === ``){
-alert(`Answer Blank`)
+alert(`Answer Blank`);
 } else {
 alert(`Wrong`);
 }
@@ -70,7 +70,7 @@ if(favFood.toLowerCase() === `pizza`) {
 alert(`Correct`);
 totalScore += 1;
 } else if(favFood && favFood.trim() === ``){
-alert(`Answer Blank`)
+alert(`Answer Blank`);
 } else {
 alert(`Wrong`);
 }
@@ -81,7 +81,7 @@ if(favColor.toLowerCase() === `purple`) {
 alert(`Correct`);
 totalScore += 1;
 } else if(favColor && favColor.trim() === ``){
-alert(`Answer Blank`)
+alert(`Answer Blank`);
 } else {
 alert(`Wrong`);
 }
