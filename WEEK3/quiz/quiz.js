@@ -48,7 +48,7 @@ myName = prompt(`What is my name?`, `enter name`)
 if(myName.toLowerCase() === `tharrin`) {
 alert(`Correct`);
 totalScore += 1;    
-} else if(myName && myName.trim() === ``){
+} else if(myName && myName.trim() === ""){
 alert(`Answer Blank`);
 } else {
 alert(`Wrong`);
@@ -59,7 +59,7 @@ myHobby = prompt(`What is one of the hobbies I enjoy out of the following video 
 if(myHobby.toLowerCase() === `reading` || myName.toLowerCase() === `video games`) {
 alert(`Correct`);
 totalScore += 1;
-} else if(myHobby && myHobby.trim() === ``){
+} else if(myHobby && myHobby.trim() === ""){
 alert(`Answer Blank`);
 } else {
 alert(`Wrong`);
@@ -69,7 +69,7 @@ favFood = prompt(`What is my favorite food?`, `enter food`)
 if(favFood.toLowerCase() === `pizza`) {
 alert(`Correct`);
 totalScore += 1;
-} else if(favFood && favFood.trim() === ``){
+} else if(favFood && favFood.trim() === ""){
 alert(`Answer Blank`);
 } else {
 alert(`Wrong`);
@@ -80,7 +80,7 @@ favColor = prompt(`What is my favorite color?`, `enter color`)
 if(favColor.toLowerCase() === `purple`) {
 alert(`Correct`);
 totalScore += 1;
-} else if(favColor && favColor.trim() === ``){
+} else if(favColor && favColor.trim() === ""){
 alert(`Answer Blank`);
 } else {
 alert(`Wrong`);
