@@ -38,20 +38,20 @@ Logical operators I will use:
 
 // Creating Variables
 let totalScore = 0;
-let myName = ``;
-let myHobby = ``;
-let favFood = ``;
-let favColor = ``;
+let myName;
+let myHobby;
+let favFood;
+let favColor;
 
 // Question 1
 myName = prompt(`What is my name?`, `enter name`)
 if(myName.toLowerCase() === `tharrin`) {
 alert(`Correct`);
 totalScore += 1;    
-} else if(myName && myName.trim() === ``){
-alert(`Answer Blank`);
-} else {
+} else if(myName && myName.trim() !== ``){
 alert(`Wrong`);
+} else {
+alert(`Answer Blank`);
 }
 
 // Question 2
@@ -59,20 +59,20 @@ myHobby = prompt(`What is one of the hobbies I enjoy out of the following video 
 if(myHobby.toLowerCase() === `reading` || myName.toLowerCase() === `video games`) {
 alert(`Correct`);
 totalScore += 1;
-} else if(myHobby && myHobby.trim() === ``){
-alert(`Answer Blank`);
-} else {
+} else if(myHobby && myHobby.trim() !== ``){
 alert(`Wrong`);
+} else {
+alert(`Answer Blank`);
 }
 // Question 3
 favFood = prompt(`What is my favorite food?`, `enter food`)
 if(favFood.toLowerCase() === `pizza`) {
 alert(`Correct`);
 totalScore += 1;
-} else if(favFood && favFood.trim() === ``){
-alert(`Answer Blank`);
-} else {
+} else if(favFood && favFood.trim() !== ``){
 alert(`Wrong`);
+} else {
+alert(`Answer Blank`);
 }
 
 // Question 4
@@ -80,10 +80,10 @@ favColor = prompt(`What is my favorite color?`, `enter color`)
 if(favColor.toLowerCase() === `purple`) {
 alert(`Correct`);
 totalScore += 1;
-} else if(favColor && favColor.trim() === ``){
-alert(`Answer Blank`);
-} else {
+} else if(favColor && favColor.trim() !== ``){
 alert(`Wrong`);
+} else {
+alert(`Answer Blank`);
 }
 
 // Calculate percentage using math
