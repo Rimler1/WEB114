@@ -56,7 +56,7 @@ alert(`Answer Blank`);
 
 // Question 2
 myHobby = prompt(`What is one of the hobbies I enjoy out of the following video games, jogging, or reading`, `enter hobby`)
-if(myHobby.toLowerCase() === `reading` || myName.toLowerCase() === `video games`) {
+if(myHobby.toLowerCase() === `reading` || myHobby.toLowerCase() === `video games`) {
 alert(`Correct`);
 totalScore += 1;
 } else if(myHobby && myHobby.trim() !== ``){
