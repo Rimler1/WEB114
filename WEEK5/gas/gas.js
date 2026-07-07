@@ -70,7 +70,7 @@ calcGasAvg();
 //Is null?
 if(average === null){
     alert(`You cancelled entering gas totals.`);
-    return;
+    break;
 }
 //Were any gas totals entered?
 if(entryCount === 0){
