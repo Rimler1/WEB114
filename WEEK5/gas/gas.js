@@ -20,7 +20,7 @@ function calcGasAvg(){
         return null;
     }
     //Convert weeklyGas to number
-    weeklyGas.toFixed(2);
+    weeklyGas = number(weeklyGas);
     //Get data with loop
     while(weeklyGas !== -1){
         //Is number?
