@@ -38,6 +38,7 @@ function calcGasAvg(){
             entryCount += 1;
             //Get weeklyGas
             weeklyGas = prompt(`Enter your next week's gas total. Enter -1 when done.`);
+            weeklyGas = number(weeklyGas);
             //Is null?
             if(weeklyGas === null){
                 return null;
