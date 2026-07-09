@@ -59,18 +59,15 @@ username = prompt(`Enter your name`);
 //Validate username
 if(username === null){
     alert(`You cancelled the name prompt.`);
-    break;
 }
 else if(username.trim() === ``){
     alert(`You must type a name.`);
-    break;
 }
 //Get average by calling function
 calcGasAvg();
 //Is null?
 if(average === null){
     alert(`You cancelled entering gas totals.`);
-    break;
 }
 //Were any gas totals entered?
 if(entryCount === 0){
