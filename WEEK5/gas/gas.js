@@ -4,10 +4,9 @@
 
 //Declaring variables
 let username;
-let enteryCount = 0;
+let entryCount = 0;
 let gasTotal;
 let average;
-let enteryMessage;
 
 //Calculation gas average with function
 function calcGasAvg(){
@@ -76,12 +75,10 @@ if(entryCount === 0){
 }
 //Get entryMessage and show it
 else if(entryCount === 1){
-    entryMessage = `${username} gas total is ${gasTotal.toFixed(2)}.`;
-    alert(entryMessage);
+    alert(`${username} gas total is ${gasTotal.toFixed(2)}.`);
 }
 else{
-    entryMessage = `${username} average weekly gas bill is $${average.toFixed(2)}.`;
-    alert(entryMessage);
+    alert(`${username} average weekly gas bill is $${average.toFixed(2)}.`);
 }
 //Show entryCount
 if(entryCount == 0){
