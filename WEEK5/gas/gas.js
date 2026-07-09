@@ -70,7 +70,7 @@ if(average === null){
     alert(`You cancelled entering gas totals.`);
 }
 //Were any gas totals entered?
-if(entryCount === 0){
+else if(entryCount === 0){
     alert(`No gas totals were entered.`);
 }
 //Get entryMessage and show it
@@ -81,9 +81,9 @@ else{
     alert(`${username} average weekly gas bill is $${average.toFixed(2)}.`);
 }
 //Show entryCount
-if(entryCount == 0){
-    alert(`No gas totals were entered.`);
+if(entryCount === 1){
+    alert(`you entered 1 gas total.`);
 }
 else{
-     alert(`you entered ${entryCount} gas totals.`);
+    alert(`you entered ${entryCount} gas totals.`);
 }
