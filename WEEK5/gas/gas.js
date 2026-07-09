@@ -5,7 +5,7 @@
 //Declaring variables
 let username;
 let entryCount = 0;
-let gasTotal;
+let gasTotal = 0;
 let average;
 
 //Calculation gas average with function
@@ -30,6 +30,7 @@ function calcGasAvg(){
             if(weeklyGas === null){
                 return null;
             }
+            weeklyGas = Number(weeklyGas);
         }
         //Add data to global variables
         else{
@@ -37,11 +38,11 @@ function calcGasAvg(){
             entryCount += 1;
             //Get weeklyGas
             weeklyGas = prompt(`Enter your next week's gas total. Enter -1 when done.`);
-            weeklyGas = Number(weeklyGas);
             //Is null?
             if(weeklyGas === null){
                 return null;
             }
+            weeklyGas = Number(weeklyGas);
         }
     }
     //Return average
@@ -75,7 +76,7 @@ if(entryCount === 0){
 }
 //Get entryMessage and show it
 else if(entryCount === 1){
-    alert(`${username} gas total is ${gasTotal.toFixed(2)}.`);
+    alert(`${username} gas total is $${gasTotal.toFixed(2)}.`);
 }
 else{
     alert(`${username} average weekly gas bill is $${average.toFixed(2)}.`);
@@ -85,5 +86,5 @@ if(entryCount == 0){
     alert(`No gas totals were entered.`);
 }
 else{
-     alert(`you entered ${gasTotal.toFixed(2)} gas totals.`);
+     alert(`you entered ${entryCount} gas totals.`);
 }
