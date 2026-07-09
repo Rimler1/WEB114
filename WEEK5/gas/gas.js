@@ -47,12 +47,11 @@ function calcGasAvg(){
     }
     //Return average
     if(entryCount > 0){
-        average = gasTotal/entryCount;
+        return gasTotal/entryCount;
     }
     else{
-        average = 0;
+        return 0;
     }
-    return average;
 }
 
 //Get username
@@ -65,7 +64,7 @@ else if(username.trim() === ``){
     alert(`You must type a name.`);
 }
 //Get average by calling function
-calcGasAvg();
+average = calcGasAvg();
 //Is null?
 if(average === null){
     alert(`You cancelled entering gas totals.`);
