@@ -59,9 +59,11 @@ username = prompt(`Enter your name`);
 //Validate username
 if(username === null){
     alert(`You cancelled the name prompt.`);
+    username = prompt(`Enter your name`);
 }
 else if(username.trim() === ``){
     alert(`You must type a name.`);
+    username = prompt(`Enter your name`);
 }
 //Get average by calling function
 average = calcGasAvg();
@@ -70,10 +72,10 @@ if(average === null){
     alert(`You cancelled entering gas totals.`);
 }
 //Were any gas totals entered?
-else if(entryCount === 0){
+if(entryCount === 0){
     alert(`No gas totals were entered.`);
 }
-//Get entryMessage and show it
+//Show gas total or weekly gas bill
 else if(entryCount === 1){
     alert(`${username} gas total is $${gasTotal.toFixed(2)}.`);
 }
