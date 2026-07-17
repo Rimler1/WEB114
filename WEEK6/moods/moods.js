@@ -24,7 +24,7 @@ const moods = {
 
         bg: '#adedb0',
 
-        text: '#bd26b0',
+        text: '#5e64c1',
 
         message: 'Calm...'
 
@@ -82,7 +82,7 @@ function handleSleepyClick() {
   changeMood("sleepy");
 }
 function handleRandomClick() {
-  changeMood([2]);
+  changeMood(moods[2]);
 }
 //Listen for clicks of buttons
 happyBtn.addEventListener("click", handleHappyClick);
