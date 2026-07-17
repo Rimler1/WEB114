@@ -33,9 +33,9 @@ const moods = {
 
         name:"Angry",
 
-        bg: '#ff0000',
+        bg: '#ff4c4c',
 
-        text: '#bd26b0',
+        text: '#ffffff',
 
         message: 'ANGRY!'
 
@@ -46,7 +46,7 @@ const moods = {
 
         bg: '#007bff',
 
-        text: '#bd26b0',
+        text: '#000000',
 
         message: 'Tired...'
 
@@ -61,6 +61,9 @@ function changeMood(moodName){
     document.body.style.color = mood.text;
     quote.textContent = mood.message;
     moodTitle.textContent = mood.name;
+    //Logging Console
+    console.log("Mood selected:", moodName);
+    console.log("Mood settings:", mood);
 }
 //Handle happy mood
 function handleHappyClick() {
@@ -78,8 +81,12 @@ function handleAngryClick() {
 function handleSleepyClick() {
   changeMood("sleepy");
 }
+function handleRandomClick() {
+  changeMood([2]);
+}
 //Listen for clicks of buttons
 happyBtn.addEventListener("click", handleHappyClick);
 calmBtn.addEventListener("click", handleCalmClick);
 angryBtn.addEventListener("click", handleAngryClick);
 sleepyBtn.addEventListener("click", handleSleepyClick);
+randomBtn.addEventListener("click", handleRandomClick);
