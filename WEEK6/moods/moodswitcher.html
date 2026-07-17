@@ -1,0 +1,41 @@
+<!--Tharrin Cooper 7/17/2026-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Site Mood</title>
+    <script src="moods.js" defer></script>
+    <link rel="stylesheet" href="moods.css">
+</head>
+<body>
+    <section>
+        <h1>Project 7 --DOM and JS</h1>
+        <h2>JavaScript Questions</h2>
+
+        <ol>
+            <li>Why is textContent safer than innerHTML?
+                <p>textContent only gets text from the user</p>
+            </li>
+            <li>How are HTML elements connected to JavaScript variables using DOM selection?
+                <p>html elements are connected to javascript variables using id and getElementById/p>
+            </li>
+            <li>What would happen to the text box with id="text" if I added this line to the code above it: text.textContent = "Hello!"
+                <p>all the text would change to "Hello"</p>
+            </li>
+        </ol>
+    </section>
+
+    <h2 id="moodTitle">Choose a Mood</h2>
+    <p>Click a mood to change the theme!</p>
+
+    <div class="buttons">
+        <button class="mood-btn" id="happyBtn">Happy</button>
+        <button class="mood-btn" id="calmBtn">Calm</button>
+        <button class="mood-btn" id="angryBtn">Angry</button>
+        <button class="mood-btn" id="sleepyBtn">Sleepy</button>
+    </div>
+
+    <p id="quote">No mood selected...</p>
+</body>
+</html>
