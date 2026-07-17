@@ -16,15 +16,15 @@
         <ol>
             <li>
                 <strong>Why is textContent safer than innerHTML?</strong>
-                <p>textContent only gets text from the user</p>
+                <p>textContent only changes the text</p>
             </li>
             <li>
                 <strong>How are HTML elements connected to JavaScript variables using DOM selection?</strong>
-                <p>html elements are connected to javascript variables using id and getElementById</p>
+                <p>html elements are connected to javascript variables using id</p>
             </li>
             <li>
                 <strong>What would happen to the text box with id="text" if I added this line to the code above it: text.textContent = "Hello!"</strong>
-                <p>all the text would change to "Hello"</p>
+                <p>all the text would change to "Hello!"</p>
             </li>
         </ol>
     </section>
@@ -37,7 +37,6 @@
         <button class="mood-btn" id="calmBtn">Calm</button>
         <button class="mood-btn" id="angryBtn">Angry</button>
         <button class="mood-btn" id="sleepyBtn">Sleepy</button>
-        <button class="mood-btn" id="randomBtn">Random</button>
     </div>
 
     <p id="quote">No mood selected...</p>

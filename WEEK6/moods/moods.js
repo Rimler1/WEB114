@@ -81,12 +81,8 @@ function handleAngryClick() {
 function handleSleepyClick() {
   changeMood("sleepy");
 }
-function handleRandomClick() {
-  changeMood(moods[2]);
-}
 //Listen for clicks of buttons
 happyBtn.addEventListener("click", handleHappyClick);
 calmBtn.addEventListener("click", handleCalmClick);
 angryBtn.addEventListener("click", handleAngryClick);
 sleepyBtn.addEventListener("click", handleSleepyClick);
-randomBtn.addEventListener("click", handleRandomClick);
