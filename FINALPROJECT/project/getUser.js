@@ -50,8 +50,9 @@ function handlePromptClick(){
     user = prompt(`Enter username from list`,`enter user`)
     //Find Valid User
     for(let key in users){
-        if(user === users[key].name){
+        if(user === users[key]){
             displayUser(user);
+            return;
         }
     }
     //User Canceled
