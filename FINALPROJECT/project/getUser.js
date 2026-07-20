@@ -50,7 +50,7 @@ function handlePromptClick(){
     user = prompt(`Enter username from list`,`enter user`)
     //Find Valid User
     for(let key in users){
-        if(user === users[key]){
+        if(user === users[key].name){
             displayUser(user);
             return;
         }
@@ -66,7 +66,8 @@ function handlePromptClick(){
 }
 //Handle Random Button
 function handleRandomClick(){
-
+    let user = users[2]
+    displayUser(user)
 }
 //Listen for clicks
 promptBtn.addEventListener("click", handlePromptClick)
