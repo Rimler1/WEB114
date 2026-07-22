@@ -47,7 +47,7 @@ function handleDisplayClick(){
     //Create Local User
     let user;
     //Get User Input
-    user = prompt(`Enter username from list`,`enter user`)
+    user = prompt(`Enter username from list`,`enter username`)
     //Find Valid User
     for(let key in users){
         if(user === users[key].name){
@@ -69,21 +69,21 @@ function handleDisplayClick(){
 function handleCustomizeClick(){
     //Create Local User
     let user;
-    let newInfo;
+    let newMessage;
     //Get User Input
-    user = prompt(`Enter username from list`,`enter user`)
+    user = prompt(`Enter username from list`,`enter username`)
     //Find Valid User
     for(let key in users){
         if(user === users[key].name){
             //Get User Input
-            newInfo = prompt(`Enter new info for ${user}`,`enter info`)
+            newMessage = prompt(`Enter new message for ${user}`,`enter message`)
             //User Canceled
-            if(newInfo === null){
+            if(newMessage === null){
             alert(`Canceling...`);
             return;
             }
-            //Change selected user info
-            users[key].info = newInfo;
+            //Change selected user message
+            users[key].message = newMessage;
             //Display user
             displayUser(user);
             return;
