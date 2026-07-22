@@ -42,7 +42,7 @@ function displayUser(userNames){
     info.textContent = user.message;
 }
 
-//Handle Prompt Button
+//Handle Display Button
 function handleDisplayClick(){
     //Create Local User
     let user;
@@ -51,6 +51,7 @@ function handleDisplayClick(){
     //Find Valid User
     for(let key in users){
         if(user === users[key].name){
+            //Display user
             displayUser(user);
             return;
         }
@@ -62,7 +63,7 @@ function handleDisplayClick(){
     }
     //No Valid User Found
     alert(`Invalid User: try again`);
-    handlePromptClick();
+    handleDisplayClick();
 }
 //Handle Random Button
 function handleCustomizeClick(){
@@ -74,13 +75,16 @@ function handleCustomizeClick(){
     //Find Valid User
     for(let key in users){
         if(user === users[key].name){
+            //Get User Input
             newInfo = prompt(`Enter new info for ${user}`,`enter info`)
             //User Canceled
             if(newInfo === null){
             alert(`Canceling...`);
             return;
             }
+            //Change selected user info
             users[key].info = newInfo;
+            //Display user
             displayUser(user);
             return;
         }
@@ -92,7 +96,7 @@ function handleCustomizeClick(){
     }
     //No Valid User Found
     alert(`Invalid User: try again`);
-    handlePromptClick();
+    handleCustomizeClick();
 }
 //Listen for clicks
 displayBtn.addEventListener("click", handleDisplayClick)
