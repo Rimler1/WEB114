@@ -2,7 +2,7 @@
 
 //After user clicks a button ask the user to enter a username from a list if invalid ask again
 //Then display the users username and the any info they entered about themselfs
-//Add a randomize button to display a random user
+//Add a customize button to change a selected users info
 
 "use strict";
 
@@ -43,7 +43,7 @@ function displayUser(userNames){
 }
 
 //Handle Prompt Button
-function handlePromptClick(){
+function handleDisplayClick(){
     //Create Local User
     let user;
     //Get User Input
@@ -65,10 +65,35 @@ function handlePromptClick(){
     handlePromptClick();
 }
 //Handle Random Button
-function handleRandomClick(){
-    let user = users[2]
-    displayUser(user)
+function handleCustomizeClick(){
+    //Create Local User
+    let user;
+    let newInfo;
+    //Get User Input
+    user = prompt(`Enter username from list`,`enter user`)
+    //Find Valid User
+    for(let key in users){
+        if(user === users[key].name){
+            newInfo = prompt(`Enter new info for ${user}`,`enter info`)
+            //User Canceled
+            if(newInfo === null){
+            alert(`Canceling...`);
+            return;
+            }
+            users[key].info = newInfo;
+            displayUser(user);
+            return;
+        }
+    }
+    //User Canceled
+    if(user === null){
+        alert(`Canceling...`);
+        return;
+    }
+    //No Valid User Found
+    alert(`Invalid User: try again`);
+    handlePromptClick();
 }
 //Listen for clicks
-promptBtn.addEventListener("click", handlePromptClick)
-randomBtn.addEventListener("click", handleRandomClick)
+displayBtn.addEventListener("click", handleDisplayClick)
+customizeBtn.addEventListener("click", handleCustomizeClick)
