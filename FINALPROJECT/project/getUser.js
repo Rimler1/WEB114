@@ -2,7 +2,7 @@
 
 //After user clicks a button ask the user to enter a username from a list if invalid ask again
 //Then display the users username and the any info they entered about themselfs
-//Add a customize button to change a selected users info
+//Add a customize button to change a selected users message
 
 "use strict";
 
@@ -63,7 +63,6 @@ function handleDisplayClick(){
     }
     //No Valid User Found
     alert(`Invalid User: try again`);
-    users.push({user: {name: user, message: `2`}}) //Test
     handleDisplayClick();
 }
 //Handle Random Button
@@ -82,6 +81,16 @@ function handleCustomizeClick(){
             if(newMessage === null){
                 alert(`Canceling...`);
                 return;
+            }
+            //Message Blank?
+            while(newMessage.trim() === ``){
+                alert(`Message Blank: try again`);
+                newMessage = prompt(`Enter new message for ${user}`,`enter message`)
+                //User Canceled
+                if(newMessage === null){
+                    alert(`Canceling...`);
+                    return;
+                }
             }
             //Change selected user message
             users[key].message = newMessage;
