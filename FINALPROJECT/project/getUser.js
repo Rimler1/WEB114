@@ -63,6 +63,7 @@ function handleDisplayClick(){
     }
     //No Valid User Found
     alert(`Invalid User: try again`);
+    users.push({user: {name: user, message: `2`}}) //Test
     handleDisplayClick();
 }
 //Handle Random Button
@@ -79,8 +80,8 @@ function handleCustomizeClick(){
             newMessage = prompt(`Enter new message for ${user}`,`enter message`)
             //User Canceled
             if(newMessage === null){
-            alert(`Canceling...`);
-            return;
+                alert(`Canceling...`);
+                return;
             }
             //Change selected user message
             users[key].message = newMessage;
