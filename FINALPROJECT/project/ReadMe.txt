@@ -1,0 +1,1 @@
+This page allows you to select a user from a list by clicking a button displaying their username and message below. You may also modify a selected users message by clicking another button that allows you to customize that users message.
