@@ -1,37 +1,41 @@
-   body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
-      transition: all 0.6s ease;
-      min-height: 100vh;
-      margin: 0;
-    }
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 50px;
+  transition: all 0.6s ease;
+  min-height: 100vh;
+  margin: 0;
+}
 
-    h1 {
-      background-color: black;
-      color: snow;
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
+h1 {
+  background-color: solid #000;
+  color: solid #ffffff;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
 
-    .user-btn {
-      padding: 14px 24px;
-      margin: 8px;
-      font-size: 1.1rem;
-      font-weight: bold;
-      cursor: pointer;
-      border: none;
-      border-radius: 12px;
-    }
+section{
+  border-bottom: 4px solid #000;
+}
 
-    #username {
-      margin-top: 40px;
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
+.user-btn {
+  padding: 14px 24px;
+  margin: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+}
 
-    #info {
-      margin-top: 40px;
-      font-size: 1rem;
-      font-weight: bold;
-    }
+#username {
+  margin-top: 40px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#info {
+  margin-top: 40px;
+  font-size: 1rem;
+  font-weight: bold;
+}
