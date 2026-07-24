@@ -79,6 +79,11 @@ function handleCustomizeClick(){
         if(user === users[key].name){
             //Get User Input
             lock = prompt(`Enter password for ${user}`,`enter password`);
+            //User Canceled
+            if(lock === null){
+                alert(`Canceling...`);
+                return;
+            }
             //Correct Password?
             while(lock !== users[key].password){
                 alert(`Incorrect Password: try again`);
