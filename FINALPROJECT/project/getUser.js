@@ -103,7 +103,7 @@ function handleCustomizeClick(){
             }
             //Message Blank?
             while(newMsg.trim() === ``){
-                alert(`msg Blank: try again`);
+                alert(`Message Blank: try again`);
                 newMsg = prompt(`Enter new message for ${user}`,`enter message`);
                 //User Canceled
                 if(newMsg === null){
