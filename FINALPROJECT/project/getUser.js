@@ -1,4 +1,4 @@
-//Tharrin Cooper 7/25/2026
+//Tharrin Cooper 7/24/2026
 
 //After user clicks the display button ask the user to enter a username from a list if invalid ask again
 //Then display the users username and the any message associated with that user
@@ -90,7 +90,7 @@ function handleCustomizeClick(){
                 }
             }
             //Get User Input
-            newMsg = prompt(`Enter new msg for ${user}`,`enter msg`);
+            newMsg = prompt(`Enter new message for ${user}`,`enter message`);
             //User Canceled
             if(newMsg === null){
                 alert(`Canceling...`);
@@ -99,7 +99,7 @@ function handleCustomizeClick(){
             //Message Blank?
             while(newMsg.trim() === ``){
                 alert(`msg Blank: try again`);
-                newMsg = prompt(`Enter new msg for ${user}`,`enter msg`);
+                newMsg = prompt(`Enter new message for ${user}`,`enter message`);
                 //User Canceled
                 if(newMsg === null){
                     alert(`Canceling...`);
